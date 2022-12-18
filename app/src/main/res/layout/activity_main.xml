@@ -1,18 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
 	
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Hello World!"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:paddingBottom="50dp"
+		tools:ignore="UselessParent">
+		
+		<LinearLayout
+			android:visibility="gone"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="bottom"
+			android:orientation="vertical">
+			
+			<com.google.android.material.textfield.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:hint="@string/name"
+				android:requiresFadingEdge="vertical"
+				android:textColorHint="@color/black">
+				
+				<EditText
+					android:id="@+id/nameInputEdt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableStart="@drawable/ic_name"
+					android:drawablePadding="10dp"
+					android:gravity="start|center"
+					android:inputType="text"
+					android:minHeight="48dp"
+					tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+			
+			</com.google.android.material.textfield.TextInputLayout>
+			
+			<com.google.android.material.textfield.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:hint="@string/phone"
+				android:requiresFadingEdge="vertical"
+				android:textColorHint="@color/black">
+				
+				<EditText
+					android:id="@+id/phoneInputEdt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableStart="@drawable/ic_number"
+					android:drawablePadding="10dp"
+					android:gravity="start|center"
+					android:inputType="phone|number"
+					android:minHeight="48dp"
+					tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+			
+			</com.google.android.material.textfield.TextInputLayout>
+			
+			<com.google.android.material.textfield.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:hint="@string/email"
+				android:requiresFadingEdge="vertical"
+				android:textColorHint="@color/black">
+				
+				<EditText
+					android:id="@+id/emailInputEdt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableStart="@drawable/ic_email"
+					android:drawablePadding="10dp"
+					android:gravity="start|center"
+					android:inputType="textEmailAddress"
+					android:minHeight="48dp"
+					tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+			
+			</com.google.android.material.textfield.TextInputLayout>
+			
+			<com.google.android.material.textfield.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:hint="@string/address"
+				android:requiresFadingEdge="vertical"
+				android:textColorHint="@color/black">
+				
+				<EditText
+					android:id="@+id/addressInputEdt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableStart="@drawable/ic_location"
+					android:drawablePadding="10dp"
+					android:gravity="start|center"
+					android:inputType="text"
+					android:minHeight="48dp"
+					tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+			
+			</com.google.android.material.textfield.TextInputLayout>
+			
+			<com.google.android.material.textfield.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:hint="@string/image_url"
+				android:requiresFadingEdge="vertical"
+				android:textColorHint="@color/black">
+				
+				<EditText
+					android:id="@+id/imageUrlInputEdt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableStart="@drawable/ic_image_url"
+					android:drawablePadding="10dp"
+					android:gravity="start|center"
+					android:inputType="textUri"
+					android:minHeight="48dp"
+					tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+			
+			</com.google.android.material.textfield.TextInputLayout>
+			
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/submitButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="20sp"
+				android:backgroundTint="@color/material_on_surface_stroke"
+				android:paddingStart="30dp"
+				android:paddingEnd="30dp"
+				android:text="@string/submit"
+				android:textAllCaps="false"
+				android:textColor="@color/black"
+				android:textSize="22sp" />
+		
+		</LinearLayout>
+		
+		<LinearLayout
+			android:visibility="visible"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="bottom"
+			android:orientation="vertical">
+			
+			<com.google.android.material.textfield.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:hint="@string/name"
+				android:requiresFadingEdge="vertical"
+				android:textColorHint="@color/black">
+				
+				<EditText
+					android:id="@+id/specialistInputEdt"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableStart="@drawable/ic_name"
+					android:drawablePadding="10dp"
+					android:gravity="start|center"
+					android:inputType="text"
+					android:minHeight="48dp"
+					tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+			
+			</com.google.android.material.textfield.TextInputLayout>
+			
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/submitButton2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="20sp"
+				android:backgroundTint="@color/material_on_surface_stroke"
+				android:paddingStart="30dp"
+				android:paddingEnd="30dp"
+				android:text="@string/submit"
+				android:textAllCaps="false"
+				android:textColor="@color/black"
+				android:textSize="22sp" />
+		
+		</LinearLayout>
+	
+	</LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

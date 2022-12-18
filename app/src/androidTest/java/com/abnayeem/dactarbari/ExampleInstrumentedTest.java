@@ -1,4 +1,4 @@
-package com.abnayeem.finddoctor;
+package com.abnayeem.dactarbari;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.abnayeem.finddoctor", appContext.getPackageName());
+        assertEquals("com.abnayeem.dactarbari", appContext.getPackageName());
     }
 }

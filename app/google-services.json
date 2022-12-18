@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "953273518594",
+    "project_id": "dactarbari-c7864",
+    "storage_bucket": "dactarbari-c7864.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273518594:android:51e86d567b144ad62e351b",
+        "android_client_info": {
+          "package_name": "com.abnayeem.dactarbari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273518594-kt4iu7ngq553sps5ts2por5kst952par.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYBLaxzDkTvG_HBix-fts63buxKUlPpJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273518594-kt4iu7ngq553sps5ts2por5kst952par.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
